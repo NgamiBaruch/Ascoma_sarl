@@ -1,0 +1,491 @@
+body{
+    margin:0;
+    padding: 0;
+    text-decoration:none;
+}
+/*style du header*/
+header{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0 0 0;
+    background-color: rgb(237, 230, 230);
+}
+.logo{
+    width:10%;
+    height: 4em;
+}
+nav{
+    width: auto;
+    display: block;
+}
+nav a{
+    text-decoration: none;
+    display: inline;
+    font-family:monospace;
+    font-weight: bolder;
+    font-size:1.4em;
+    color: rgb(93, 93, 143);
+    transition: border 0.3s;
+}
+nav li{
+    display: inline;
+    margin: 0.5em;
+}
+.boutonDeroulant{
+    display: none;
+}
+.fermer{
+    display: none;
+}
+.icone button,.boutonDeroulant,.fermer{
+    width: 9em;
+    height: 3em;
+    background-color: rgb(133, 133, 153);
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    border-radius: 5px;
+    border: none;
+    margin-top: 0.4em;
+    font-size: large;
+    transition: background-color 1s;
+    text-align: center;
+}
+.imagEntete{
+    width: 100%;
+    height: 35em;
+    text-align: center;
+    border: solid thin lightgray;
+    background-image: url(./image/assurance3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 2em 0;
+}
+.navBar{
+    display: block;
+}
+.motEntete{
+    margin: 15em 0 0 0 ;
+    text-align: center;
+}
+.grosMot{
+    color: rgb(45, 45, 53);
+    font-family:Arial ;
+    font-size: 3em;
+    font-weight: bolder;
+}
+.imagEntete  button span{
+    margin: 0 1em 0 0;
+}
+/*stylre du corps*/
+
+.corps{
+    width: 90%;
+    height: auto;
+    margin:0 0 0 5%;
+}
+.content1{
+    display: flex;
+    color: white;
+    border: solid;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+.content1 .image1{
+    width:50%;
+    height: 15em;
+    background-image: url(./image/malade1.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+    border-radius: 5px;
+    border: solid;
+}
+.content1 .image2{
+    width:50%;
+    height: 15em;
+    background-image: url(./image/accident3.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+    border-radius: 5px;
+    font-weight: bolder;
+    border: solid;
+}
+.image1 div{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin: 1em 0 0.5em 1em;
+}
+.image1 button{
+    height: 3em;
+    width: 9em;
+    background-color: transparent;
+    color: white;
+     border: solid;
+     border-radius: 5px;
+     font-family: Arial;
+     font-weight: bolder;
+     font-size: large;
+     margin: 1.5em 0 0 1.7em;
+     transition: background-color 0.6s;
+}
+
+.image2 div{
+    font-family: Arial;
+    font-size: xx-large;
+    margin: 1em 0 0.5em 1em;
+}
+.image2 button{
+    height: 3em;
+    width: 9em;
+    background-color: transparent;
+    color: white;
+     border: solid;
+     border-radius: 5px;
+     font-family: sans-serif;
+     font-weight: bolder;
+     font-size: large;
+     margin: 1.5em 0 0 1.7em;
+     transition: background-color 0.6s;
+}
+/*style du premier lot d image*/
+.content2Image{
+    display: flex;
+    justify-content: space-between;
+}
+.titre1{
+    margin: 0 0 2em 0;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.content2Image{
+    display: flex;
+    margin: 0em;
+    width: 100%;
+    height: auto;
+}
+.imag{
+    width: 15%;
+    height: auto;
+    margin: 0 0.7em 0 ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+.imag div{
+    width: 100%;
+    height: 10em;
+    margin: 0 0 1em 0;
+    border-radius: 5px;
+}
+.content2Image .image1{
+    background-image: url(./image/malade1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition:background-size 0.6s ;
+}
+
+.content2Image .image3{
+    background-image: url(./image/malade3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition:background-size 0.6s ;
+}
+.content2Image .image4{
+    background-image: url(./image/malade4.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.content2Image .image5{
+    background-image: url(./image/malade2.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.content2Image .image6{
+    background-image: url(./image/malade5.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+/*style du second lot d image*/
+.titre{
+    margin: 2em 0em 2em 3em;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contentImage2{
+    display: flex;
+    margin: 0 0em 0 5em;
+    width: 90%;
+    height: auto;
+}
+
+.image{
+    width: 15%;
+    height: auto;
+    margin: 0.7em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+/*style du troisieme lot*/
+.titre{
+    margin: 2em 0 2em 0;
+    font-size: xx-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contentImage3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.image{
+    width: 15%;
+    height: auto;
+    margin: 0.7em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+}
+.image div{
+    width: 100%;
+    height: 7em;
+    margin: 0 0 1em 0;
+    border-radius: 5px;
+}
+.contentImage3 .image1{
+    background-image: url(./image/accident2.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.contentImage3 .image2{
+    background-image: url(./image/accident3.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.contentImage3 .image3{
+    background-image: url(./image/accident3.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.contentImage3 .image4{
+    background-image: url(./image/accident3.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.contentImage3 .image5{
+    background-image: url(./image/accident2.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.content4{
+    text-align: center;
+    display: block;
+    margin: 1em 0 0 0;
+    border: solid thin lightgray;
+    border-radius: 2em;
+    line-height: 2em;
+    width: 100%;
+    height: auto;
+    color: rgb(111, 108, 108);
+    font-family: sans-serif;
+}
+.content4 h1{
+    color:  rgb(156, 156, 219);;
+}
+/*annimations*/
+/*annimation de la barre de navigation*/
+nav a:hover{
+ color:rgb(125, 125, 205);
+border-bottom: solid rgb(125, 125, 205);
+}
+.icone button{
+    cursor:pointer;
+}
+/*style du footer*/
+.piedDepage{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: gray;
+    margin-top: 4em;
+}
+.piedDepage .content{
+    display: flex;
+}
+.piedDepage .content div a{
+    text-decoration: none;
+    color: gray;
+}
+.piedDepage .content div span{
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+}
+.piedDepage .content div{
+    width: 23%;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin: 4em 2em 0 2em;
+}
+.motdefin{
+    margin: 3em 0 0 5em ;
+    font-family: sans-serif;
+    font-size: large;
+} 
+.motdefin a{
+    color: white;
+    text-decoration: none;
+}
+.motdefin a:hover{
+    color: rgb(194, 53, 53);
+    text-decoration: underline;
+}
+/*annimation*/
+.icone button:hover{
+    background-color: rgb(156, 156, 219);
+}
+/*annimation des deux premiere images*/
+.content1 div:hover{
+    cursor: pointer;
+}
+.image1:hover{
+    background-size: 104%;
+}
+.image2:hover{
+    background-size: 104%;
+}
+.image1:hover button{
+    background-color: rgb(156, 156, 219);
+}
+.image2:hover button{
+    background-color: rgb(156, 156, 219);
+}
+/*annimation des deux premiere lots*/
+.image div:hover{
+    background-size: 104%;
+    cursor: pointer;
+}
+.image span:hover{
+    color: red;
+    cursor: pointer;
+}
+.imag :hover{
+    background-size: 104%;
+}
+.imag span:hover{
+    color: red;
+}
+.test{
+    width: 4em;
+    height: 4em;
+    border: solid;
+    margin: 4em;
+}
+.test button{
+    width: 4em;
+    height: 4em;
+    background-color: red;
+    color: white;
+}
+.test div a{
+    position: absolute; 
+    opacity: 0;
+}
+.test:hover{
+    display: block;
+}
+.test:hover a{
+    position: relative;
+    opacity: 1;
+}
+.image1{
+    border-radius:4px 0 0 9px ;
+}
+
+/*responssive de la page*/
+@media only screen and (max-width:600px){
+    /*responssive du menue deroulant*/
+    .logo{
+        width: 20%;
+    }
+    .boutonDeroulant{
+        display: block;
+        width: 10%;
+        font-size: large;
+        line-height: 3em;
+    }
+    .navBar{
+        position: absolute;
+        width: 97%;
+        height: 80%;
+        background-color:black;
+        border: solid;
+        border-radius:0 1em 1em 1em ;
+        display: none;
+    }
+    nav a{
+        display: block;
+        margin: 2em;
+        font-size: x-large;
+    }
+    /*responssive de l image d accueil*/
+    .motEntete{
+        margin: 17em 0 0 0 ;
+        text-align: center;
+    }
+    .grosMot{
+        color: rgb(45, 45, 53);
+        font-family:Arial ;
+        font-size: 3em;
+        font-weight: bolder;
+    }
+    .fermer{
+        display: block;
+    }
+    /* responssive du conpteneur ds assurances*/
+    .content1{
+        display: block;
+        color: white;
+        border: solid;
+        width: 100%;
+        margin: 0 0 2em 0;
+    }
+    .content1 .image1,.content1 .image2{
+        width:90%;
+        height: 15em;
+        border: solid thin lightgray;
+        margin: 20% 0 0 4%;  
+    }
+    /*responssive des  maladie*/
+    .titre1,.titre{
+        margin: 0 0 2em 1em;
+    }
+    .content2Image,.contentImage3{
+        display: block;
+    }
+    .image{
+        width: 90%;
+        height: auto;
+        margin: 0 2em 2em  1em;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: x-large;
+        font-weight: bolder;
+    }
+    /*responssive du footer*/
+    .piedDepage .content{
+        display:block;
+    }
+    .piedDepage .content div{
+        width: 90%;
+        height: auto;
+        margin: 2em 0 0 1em;
+    }
+    /*annimation du responsssive*/
+}

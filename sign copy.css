@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulaire{
+    background-color: rgb(240, 239, 239);
+    width: 1200px;
+    padding-bottom: 50px;
+    
+}
+
+.formulaire .logo{
+    padding: 25px;
+    /* background-color: aquamarine; */
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulaire .logo img{
+    width: 350px;
+    height: 150px;
+}
+.formulaire .notes{
+    font-style: italic;
+    padding: 25px;
+    font-size: 20px;
+    color: rgb(6, 6, 168);
+}
+.formulaire .information{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.formulaire .information label{
+    font-weight: bolder;
+}
+.formulaire .information input{
+    border-radius: 5px;
+    height: 40px;
+    border: 1px solid #0b3761;
+    color: #0b3761;
+    font-size: 20px;
+}
+.formulaire .information .input{
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 5px;
+}
+.formulaire .information .inputname{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.formulaire .information .inputname .prenom, .formulaire .information .inputname .nom, .formulaire .information .inputname .nomsH, .formulaire .information .inputname .villesH, .formulaire .information .inputname .nomsE, .formulaire .information .inputname .villesE{
+    display: flex;
+    flex-direction: column;
+}
+.formulaire .information .inputname .prenom input, .formulaire .information .inputname .nom input, .formulaire .information .inputname .nomsH input, .formulaire .information .inputname .villesH input, .formulaire .information .inputname .nomsE input, .formulaire .information .inputname .villesE input{
+    width: 500px;
+}
+.formulaire .information .inputname label{
+    color: rgb(156, 156, 154);
+}
+/* .formulaire .bouton{
+    border: 1px solid w;
+} */
+
+
+.login{
+    width: 100%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    box-shadow: 2px 2px 1px grey;
+    border-radius: 10px;
+    margin-left: 400px;
+    height: 50px;
+
+}
+.login a{
+    text-decoration: none;
+    color: white;
+}
+.message1,.message2,.message3,.message4,.message5,.message6,.message7,.message8,.message9,.message10{
+    display: none;
+    color: red;
+}
+@media only screen and (max-width: 700px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        /* background-color: gray; */
+    }
+    .formulaire{
+       
+        /* background-color: rgb(240, 239, 239); */
+        width: 400px;
+        padding-bottom: 50px;
+        
+    }
+    .formulaire .logo{
+        padding: 25px;
+        /* background-color: aquamarine; */
+        width: 400px;
+        height: 200px;
+    }
+    .formulaire .logo img{
+        width: 250px;
+        height: 100px;
+    }
+    .formulaire .information .inputname{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: space-between;
+    }
+    .formulaire .information label{
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    .formulaire .information .inputname .prenom input, .formulaire .information .inputname .nom input, .formulaire .information .inputname .nomsH input, .formulaire .information .inputname .villesH input, .formulaire .information .inputname .nomsE input, .formulaire .information .inputname .villesE input{
+        width: 355px;
+    }
+    .login{
+        background-color: #0b3761;
+        border: 2px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 380px;
+        box-shadow: 2px 2px 1px grey;
+        border-radius: 10px;
+        margin-left: 10px;
+        height: 50px;
+    
+    }
+}

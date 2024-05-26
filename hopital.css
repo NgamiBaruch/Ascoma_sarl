@@ -1,0 +1,553 @@
+body{
+    margin:0;
+    padding: 0;
+    text-decoration:none;
+}
+/*style du header*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    margin-top: 50px;
+}
+body{
+    position: relative;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255 255 255 /0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.menu{
+    display: flex;
+}
+.logo{
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 25px;
+}
+.logo span{
+    color: #273e60;
+}
+.menu li{
+    margin: 0 15px;
+    list-style: none;
+}
+.menu li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #999;
+    position: relative;
+}
+.menu li a::before{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #27ae60;
+    transition: 0.5s;
+}
+.menu li a:hover::before{
+    width: 100%;
+}
+.menu li a::after{
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #27ae60;
+    transition: 0.5s;
+}
+.menu li a:hover::after{
+    width: 100%;
+}
+.menu li a:hover{
+    color: #27ae60;
+}
+
+.mot{
+    color: black;
+    font-family:sans-serif;
+    font-size: 1.7em;
+    margin:0em 0 0 1em;
+    font-family: sans-serif;
+}
+.mot span{
+    color: red;
+    font-weight: bolder;
+    font-size: 2em;
+}
+nav{
+    width: auto;
+    display: block;
+}
+nav a{
+    text-decoration: none;
+    display: inline;
+    font-family:monospace;
+    font-weight: bolder;
+    font-size:1.4em;
+    color: black;
+    transition: border 0.3s;
+}
+nav li{
+    display: inline;
+    margin: 0.5em;
+}
+.icone button{
+    width: 9em;
+    height: 3em;
+    background-color:rgb(133, 133, 153);
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    border-radius: 5px;
+    border: none;
+    margin-top: 0.4em;
+    font-size: large;
+}
+
+/* style du carrocelle
+    box-shadow: 0em 0em 7em 5em rgb(19, 18, 18) inset;
+*/
+.imagEntete{
+    width: 100%;
+    height: 40em;
+    text-align: center;
+    border: solid thin lightgray;
+    background-image: url(./image/m3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 2em 0 2em 0;
+}
+
+.motEntete{
+    margin: 17em 0 0 0 ;
+    text-align: center;
+}
+.grosMot{
+    color:#0b3761 ;
+    font-family:Arial ;
+    font-size: 3em;
+    font-weight: bolder;
+}
+.imagEntete  button span{
+    margin: 0 1em 0 0;
+}
+/*style du corps*/
+.corps{
+    width: 70%;
+    height: auto;
+    margin: 10% 0 0 15%;
+}
+.corps img{
+    width: 100%;
+    height: 30em;
+    border-radius: 1em;
+}
+p span{
+    color: rgb(88, 88, 117);
+    border-radius: 1em;
+}
+p{
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    margin: 10% 0 0 0 ;
+    line-height: 1.5em;
+}
+
+/*style du premier lot d image*/
+.content2Image{
+    display: flex;
+    justify-content: space-between;
+}
+.titre1{
+    margin: 0 0 2em 0;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.content2Image{
+    display: flex;
+    margin: 0em;
+    width: 100%;
+    height: auto;
+}
+.imag{
+    width: 15%;
+    height: auto;
+    margin: 0 0.7em 0 ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+.imag div{
+    width: 100%;
+    height: 10em;
+    margin: 0 0 1em 0;
+    border-radius: 5px;
+}
+.content2Image .image1{
+    background-image: url(./image/malade1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition:background-size 0.6s ;
+}
+
+.content2Image .image3{
+    background-image: url(./image/malade3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition:background-size 0.6s ;
+}
+.content2Image .image4{
+    background-image: url(./image/malade6.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.content2Image .image5{
+    background-image: url(./image/malade2.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.content2Image .image6{
+    background-image: url(./image/malade8.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+/*style du second lot d image*/
+.titre{
+    margin: 2em 0em 2em 3em;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contentImage2{
+    display: flex;
+    margin: 0 0em 0 5em;
+    width: 90%;
+    height: auto;
+}
+
+.image{
+    width: 15%;
+    height: auto;
+    margin: 0.7em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+/*style du troisieme lot*/
+.titre{
+    margin: 2em 0 2em 0;
+    font-size: xx-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contentImage3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.image{
+    width: 15%;
+    height: auto;
+    margin: 0.7em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+}
+.image div{
+    width: 100%;
+    height: 7em;
+    margin: 0 0 1em 0;
+    border-radius: 5px;
+}
+.contentImage3 .image1{
+    background-image: url(./image/malade12.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.contentImage3 .image2{
+    background-image: url(./image/malade10.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.contentImage3 .image3{
+    background-image: url(./image/malade7.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.contentImage3 .image4{
+    background-image: url(./image/malade9.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.contentImage3 .image5{
+    background-image: url(./image/malade4.jpg);
+    background-size: 100%;
+    transition:background-size 0.6s ;
+}
+.content4{
+    text-align: center;
+    display: block;
+    margin: 1em 0 0 0;
+    border: solid thin lightgray;
+    border-radius: 2em;
+    line-height: 2em;
+    width: 100%;
+    height: auto;
+    color: rgb(111, 108, 108);
+    font-family: sans-serif;
+}
+.content4 h1{
+    color: #0b3761;
+}
+.formul{
+    width: 800px;
+    margin-left: 260px;
+}
+.formul fieldset{
+    width: 200px;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid #0b3761;  
+}
+.formul legend{
+    padding-right: 20px;
+}
+.formul h1{
+    font-size: 36px;
+    color: #0b3761;
+}
+.formul input{
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 20px;
+    border: 2px solid #0b3761;
+    transition: 0.3s ease-in;
+    box-shadow: 4px 4px 300px white;
+}
+.formul input :hover{
+    box-shadow: 4px 4px 300px rgb(140, 248, 248) ;
+}
+#soumettre{
+    width:200px ;
+    height:50px ;
+    margin-left:210px ;
+    margin-top: 40px;
+    background: #0b3761;
+    color: #fff;
+    border-radius:15px;
+    font-size: 23px;
+}
+#soumettre:hover{
+    box-shadow: 4px 4px 300px  rgb(140, 248, 248) ;
+}
+/*photo*/
+.mesphotos{
+    width: 140px;
+    height: 180px;
+    display: block;
+    justify-content: center;
+    margin-top: 0px;
+    margin-right: 7px;
+    margin-left: 25px;
+    margin-bottom: 160px;
+    text-align:center ;
+
+}
+
+.mesphotos  p{
+    width: 140px;
+    color:#0b3761;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 4px;
+    
+}
+#profil{
+    width: 135px;
+    height: 130px;
+    border: 2px solid #0b3761;
+    
+
+    margin-right: 50px;
+    
+}
+.img input{
+    display: none;
+}
+
+.img label{
+    width: 300px;
+    color:#0b3761;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: 2px solid #0b3761;
+    border-radius: 10px;
+    
+
+}
+.content4 .message legend{
+    color: #0b3761;
+}
+.content4 .message textarea{
+    border-radius: 28px;
+    border: 2px solid #0b3761;
+    padding-right: 20px;
+}
+#soumettre1{
+    width:200px ;
+    height:50px ;
+    margin-left:50px ;
+    margin-top: 35px;
+    background: #0b3761;
+    color: #fff;
+    border-radius:15px;
+    font-size: 23px;   
+}
+/*annimations*/
+/*annimation de la barre de navigation*/
+nav a:hover{
+ color: red;
+border-bottom: solid rgb(151, 58, 58);
+}
+.icone button{
+    cursor:pointer;
+}
+.imagEntete  button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+/*style du footer*/
+.piedDepage{
+    width: 100%;
+    height: 35em;
+    background-color: black;
+    color: gray;
+    margin-top: 4em;
+}
+.piedDepage .content{
+    display: flex;
+}
+.piedDepage .content div a{
+    text-decoration: none;
+    color: gray;
+}
+.piedDepage .content div span{
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+}
+.piedDepage .content div{
+    width: 23%;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin: 4em 2em 0 2em;
+}
+.motdefin{
+    margin: 3em 0 0 5em ;
+    font-family: sans-serif;
+    font-size: large;
+} 
+.motdefin a{
+    color: white;
+    text-decoration: none;
+}
+.motdefin a:hover{
+    color: rgb(194, 53, 53);
+    text-decoration: underline;
+}
+/*annimation des deux premiere images*/
+.content1 div:hover{
+    cursor: pointer;
+}
+.image1:hover{
+    background-size: 104%;
+}
+.image2:hover{
+    background-size: 104%;
+}
+.image1:hover button{
+    background-color: red;
+}
+.image2:hover button{
+    background-color: red;
+}
+/*annimation des deux premiere lots*/
+.image div:hover{
+    background-size: 104%;
+    cursor: pointer;
+}
+.image span:hover{
+    color: red;
+    cursor: pointer;
+}
+.imag :hover{
+    background-size: 104%;
+}
+.imag span:hover{
+    color: red;
+}
+.test{
+    width: 4em;
+    height: 4em;
+    border: solid;
+    margin: 4em;
+}
+.test button{
+    width: 4em;
+    height: 4em;
+    background-color: red;
+    color: white;
+}
+.test div a{
+    position: absolute; 
+    opacity: 0;
+}
+.test:hover{
+    display: block;
+}
+.test:hover a{
+    position: relative;
+    opacity: 1;
+}
+.image1{
+    border-radius:4px 0 0 9px ;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <div class="formul">
+        <fieldset>
+            <legend>veuillez remplire ce formulaire</legend>
+                <table border="0">
+                    <form action="" onsubmit="return validForm(this);">
+                    <tr>
+                        <th  width="140" colspan="3"> <h1> <u>AYANT DROIT</u></h1> </th>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="3"   width="60"> <h3><u>Partenaires</u></h3> </th>
+                    </tr>
+
+                    <div class="class">
+                        <tr>
+                            <td><label for="nom">NOM</label></td>
+                            <td><input type="text" name="nom" size="45" required ></td>
+                            <td rowspan="5" width="80"> 
+    
+                                <div class="mesphotos">
+                                    <div class="photo">
+                                        <img src="image/f1.jpg" alt="image" id="profil">
+                                    </div>
+                                    <div class="img">
+                                         <label for="input-file" id="label">pieces justificatrices <br> (acte de mariage)</label>
+                                         <input type="file" accept="image/jpeg, image/png, images/jpg, image/gif"  id="input-file">
+                                    </div>
+                                    <script>
+                                        let profile = document.getElementById("profil");
+                                        let inputFile = document.getElementById("input-file");
+                                        inputFile.onchange=function(){
+                                        profile.src=URL.createObjectURL(inputFile.files[0]);
+                                        }
+                                    </script>
+                                </div>  
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td><label for="prenom">PRENOM</label></td>
+                            <td><input type="text" name="prenom" size="45" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="datenaissance">DATE NAISSANCE</label></td>
+                            <td><input type="text" name="datenaissance" size="45" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="sexe">SEXE</label></td>
+                            <td>
+                                <input type="radio" name="sexe" >feminin
+                                <input type="radio" name="sexe" >masculin
+                               
+    
+                            </td>
+                        </tr>
+                        <tr><td colspan="2"><input id="soumettre" type="submit" value="soumettre">
+                            <script src="script.js">
+    
+                            </script>
+                        </td></tr>
+
+                    </div>
+                    </form>
+                    <form action="" onsubmit="return validForm(this);">
+                    <tr>
+                        <th colspan="3"> <h3><u>Enfants</u></h3> </th>
+                    </tr>
+                     <tr>
+                        <td><label for="nom">NOM</label></td>
+                        <td><input type="text" name="nom" size="45"></td>
+                        <td rowspan="5">
+                            <div class="mesphotos1">
+                                <div class="photo1">
+                                    <img src="image/f1.jpg" alt="image" id="profil1">
+                                </div>
+                                <div class="img1">
+                                    <label for="input-file1" id="label1">Pieces justificatrices <br> (Acte de naissance)</label>
+                                    <input type="file" accept="image/jpeg, image/png, images/jpg, image/gif" id="input-file1">
+                                </div>
+                                <script>
+                                    let profile1=document.getElementById("profil1");
+                                    let inputFile1=document.getElementById("input-file1");
+                                    inputFile1.onchange=function(){
+                                        profile1.src=URL.createObjectURL(inputFile1.files[0]);
+                                    }
+                                </script>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="prenom">PRENOM</label></td>
+                        <td><input type="text" name="prenom" size="45"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="datenaissance">DATE NAISSANCE</label></td>
+                        <td><input type="text" name="datenaissance" size="45"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sexe">SEXE</label></td>
+                        <td>
+                            <input type="radio" name="sexe" >feminin
+                            <input type="radio" name="sexe" >masculin
+                            <input type="radio" name="sexe" >mixte
+        
+                        </td>
+                    </tr>
+                    <tr><td colspan="2"><input id="soumettre" type="submit" value="soumettre">
+                        <script src="script.js"></script>
+                    </td></tr> 
+                </form>
+
+                </table>
+
+        </fieldset>
+    </div>
+</body>
+</html>

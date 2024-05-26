@@ -1,0 +1,186 @@
+
+[hidden] {
+  display: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: #5755d9;
+  outline: none;
+  text-decoration: none;
+}
+
+a:focus {
+  box-shadow: 0 0 0 0.1rem rgba(87, 85, 217, 0.2);
+}
+
+
+.btn.btn-link {
+  background: transparent;
+  border-color: transparent;
+  color: #5755d9;
+}
+
+.columns {
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -0.4rem;
+  margin-right: -0.4rem;
+}
+
+.columns.col-gapless {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.columns.col-gapless > .column {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.columns.col-oneline {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.column {
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 100%;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+
+.column.col-12,
+.column.col-11,
+.column.col-10,
+.column.col-9,
+.column.col-8,
+.column.col-7,
+.column.col-6,
+.column.col-5,
+.column.col-4,
+.column.col-3,
+.column.col-2,
+.column.col-1 {
+  -ms-flex: none;
+  flex: none;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-11 {
+  width: 91.66666667%;
+}
+
+.col-10 {
+  width: 83.33333333%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-8 {
+  width: 66.66666667%;
+}
+
+.col-7 {
+  width: 58.33333333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.66666667%;
+}
+
+.col-4 {
+  width: 33.33333333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.66666667%;
+}
+
+.col-1 {
+  width: 8.33333333%;
+}
+
+.col-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  max-width: none;
+  width: auto;
+}
+
+.col-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-ml-auto {
+  margin-left: auto;
+}
+
+.col-mr-auto {
+  margin-right: auto;
+}
+.navbar {
+  align-items: stretch;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: stretch;
+  -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.navbar .navbar-section {
+  align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
+  -ms-flex-align: center;
+}
+.navbar .navbar-section:not(:first-child):last-child {
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.navbar .navbar-center {
+  align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -ms-flex-align: center;
+}
+.navbar .navbar-brand {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+}

@@ -1,0 +1,111 @@
+body{
+    background-image: url(images/press.png);
+    background-repeat: no-repeat;
+    background-size: 1100px;
+}
+.acceuil{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    row-gap: 50px;
+    /* width: 1000px;
+    height: 150px; */
+}
+.acceuil .pres {
+    /* background-color: blueviolet; */
+    font-size: 50px;
+    box-shadow: 2px 2px 3px #0b3761;
+    color: #0b3761;
+}
+.acceuil .souspres{
+    font-size: 25px;
+    color: orange;
+}
+.connex{
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    column-gap: 50px;
+}
+
+.particulier,.entreprise{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    justify-content: center;
+    text-align: center;
+    width: 450px;
+    height: 450px;
+}
+a {
+    text-decoration: none;
+    color: #0b3761;
+    font-size: 30px;
+}
+
+.particulier img, .entreprise img{
+    height: 350px;
+    border-radius: 30px;
+    border: 1px solid #0b3761;
+    box-shadow: -3px -2px 2px #0b3761;
+}
+
+@media only screen and (max-width: 700px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        /* background-color: gray; */
+    }
+    body{
+        background-size: 900px;
+        margin-bottom: 50px;
+    }
+    .connex{
+        margin: 0px 0px 0px 30px;
+    }
+    .acceuil{
+        margin-top: 270px;
+        row-gap: 50px;
+    }
+    .acceuil .pres {
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #0b3761;
+        color: #0b3761;
+    }
+    .acceuil .souspres{
+        font-size: 20px;
+    }
+    .connex{
+        padding: 0px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
+        row-gap: 50px;
+    }
+    .particulier,.entreprise{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 350px;
+        height: 450px;
+    }
+    .particulier img, .entreprise img{
+        border-radius: 30px;
+        border: 1px solid #0b3761;
+        box-shadow: -3px -2px 2px #0b3761;
+    }
+    .particulier img{
+        height:820px ;
+        width: 350px;
+    }
+}

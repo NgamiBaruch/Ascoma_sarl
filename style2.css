@@ -1,0 +1,204 @@
+.formul{
+    width: 60px;
+    margin-left: 300px;
+}
+.formul fieldset{
+    width: 200px;
+    height: 800px;
+    border-radius: 10px;
+    border: 2px solid #0b3761;
+    
+}
+.formul h1{
+    font-size: 36px;
+    color: #0b3761;
+}
+.formul h3{
+    padding-right: 500px;
+    font-size: 24px;
+    color: #0b3761;
+}
+.formul input{
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 20px;
+    border: none;
+    border: 2px solid #0b3761;
+    
+
+}
+#soumettre{
+    width:200px ;
+    height:50px ;
+    margin-left:210px ;
+    margin-top: 40px;
+    background: #0b3761;
+    color: #fff;
+    border-radius:15px;
+    font-size: 23px;
+}
+
+/*photo*/
+.mesphotos{
+    width: 140px;
+    height: 180px;
+    display: block;
+    justify-content: center;
+    margin-top: 0px;
+    margin-right: 7px;
+    margin-left: 25px;
+    margin-bottom: 60px;
+    text-align:center ;
+
+}
+#profil{
+    border: 2px solid #0b3761;
+    width: 130px;
+    height: 130px;
+}
+.img input{
+    display: none;
+}
+
+.img label{
+    width: 300px;
+    color:#0b3761;
+    font-weight: 50px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    
+
+}
+.mesphotos1{
+    width: 140px;
+    height: 180px;
+    display: block;
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: 0px;
+    margin-right: 7px;
+    margin-bottom: 50px;
+    text-align:center ;
+}
+#profil1{
+    border: 2px solid #0b3761;
+    width: 130px;
+    height: 130px;
+}
+.img1 input{
+    display: none;
+}
+
+.img1 label{
+    width: 300px;
+    color:rgb(24, 24, 105);
+    font-weight: 50px;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    
+
+}
+.formul.class{
+    padding-bottom: 20px;
+}
+.formul.class1{
+    margin-bottom: 100px;
+}
+
+.formulhosto{
+    width: 80%;
+    height: 100%;
+    margin-left: 250px;
+    margin-top: 100px;
+}
+.formulhosto fieldset{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    border: 4px solid #0b3761;
+    background: rgb(173, 171, 171);
+    border: solid red;
+}
+.formulhosto input{
+    height: 40px;
+    border-radius: 15px;
+    margin-left: 20px;
+    border: none;
+    border: 3px solid #0b3761;
+    
+
+}
+.formulhosto h1{
+    font-size: 45px;
+    color: #0b3761;
+    text-align: center;
+}
+.formulhosto label{
+    font-size: 25px;
+    font-weight: 20px;
+}
+
+
+.mesphotos2{
+    width: 500px;
+    height: 450px;
+    display: block;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 60px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    text-align:center ;
+}
+#profil2{
+    border: 3px solid #0b3761;
+    width: 500px;
+    height: 470px;
+    background: #fff;
+}
+.img2 input{
+    display: none;
+}
+
+#label2{
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    color: aliceblue;
+    background-color: #0b3761;
+    border-radius: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+    margin-left: 140px;
+}    
+#soumettre1{
+    width:200px ;
+    height:50px ;
+    margin-left:-5px ;
+    margin-top: 10px;
+    background: #0b3761;
+    color: #fff;
+    border-radius:15px;
+    font-size: 23px;
+}    
+.formulhosto textarea{
+    border: 4px solid #0b3761 ;
+    background-color: rgb(173, 171, 171);
+    margin-top: 15px;
+}
+.formulhosto .message{
+    font-size: 33px;
+    padding-top: 50px;
+
+}

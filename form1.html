@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>particulier</title>
+    <style>
+        .wraper{
+            position: relative;
+        }
+        .f1{
+            position: static;
+        }
+        .f2{
+            position: absolute;
+            right: 0%;
+            width: 50%;
+            top: 0%;
+            
+
+        }
+        form{
+            font-size: x-large;
+            background-color: rgb(207, 203, 203);
+            padding: 15px;
+            border-radius: 5px;
+            height: 300px;
+            
+        }
+        
+        img{
+            width: 43%;
+            height: 400px;
+        }
+        input{
+            font-size: x-large;
+            width: 100%;
+            border-radius: 5px;
+            height: 50px;
+        }
+        a{
+            text-align: center;
+        }
+        body{
+            position: relative;
+            background-image: url(assimg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* text-align: center; */
+        }
+        /*responssive de la page*/
+        @media only screen and (max-width:600px){
+            .f2{
+                position: relative;
+            }
+            .wraper{
+                width: 90%;
+                height: auto;
+            }
+            .f1,.f2 {
+                width: 100%;
+                position: relative;
+            }
+            .f1 img{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wraper">
+        <figure class="f1">
+<img src="imageformulaire.jpg" alt="imageformulaire">
+        </figure>
+        <figure class="f2">
+<form action="">
+    <p style="text-align: center;">wellcom </p>
+    <input type="text" placeholder="Name*" required><br><br>
+    <input type="text" placeholder="Matricule*" required><br><br>
+    <input type="submit" value="submit"><br><br>
+    <a href="form2.html" style="color: rgb(241, 16, 16);"><p>Matricule oublier</p></a><br>
+</form>
+        </figure>
+
+    </div>
+</body>
+</html>

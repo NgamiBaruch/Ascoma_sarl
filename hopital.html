@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hopital.css">
+     <style>
+        
+/*style du header*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    margin-top: 50px;
+}
+body{
+    position: relative;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255 255 255 /0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.menu{
+    display: flex;
+}
+.logo{
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 25px;
+}
+.logo span{
+    color: #273e60;
+}
+.menu li{
+    margin: 0 15px;
+    list-style: none;
+}
+.menu li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #999;
+    position: relative;
+}
+.menu li a::before{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #27ae60;
+    transition: 0.5s;
+}
+.menu li a:hover::before{
+    width: 100%;
+}
+.menu li a::after{
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #27ae60;
+    transition: 0.5s;
+}
+.menu li a:hover::after{
+    width: 100%;
+}
+.menu li a:hover{
+    color: #27ae60;
+}
+     </style>
+    <title>Document</title>
+</head>
+<body>   
+    <header>
+        <div class="logo">
+           <p><span>AS</span>COMA</p>
+        </div>
+        <ul class="menu">
+            <li><a href="acceuil.php">Acceuil</a></li>
+            <li><a href="#menu"></a></li>
+            <li><a href="contact.php" class="btn btn-outline-danger" type="reset">Envoyer_facture</a></li>
+            <li><a href="#about_us"></a></li>
+            <li><a href="#reservation"></a></li>
+        </ul>
+        <!-- menu rsponsive -->
+        <div class="toggle_menu"></div>
+    </header>
+
+
+        <main>
+            <section>
+                <div class="imagEntete" id="haut">
+                    <div class="motEntete">
+                        <span class="grosMot">Bienvenue chez ASCOMA</span> <br>
+                        <small class="grosMot">pages hopitaux</small>
+                    </div>
+                </div>
+            </section>
+            <section class="corps">
+                <p>
+                    <span>Maladie :</span><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At cupiditate voluptates obcaecati quos optio suscipit,
+                    aut minus nobis temporibus porro sed adipisci laudantium
+                    a! Doloribus mollitia itaque iusto rerum commodi!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At cupiditate voluptates obcaecati quos optio suscipit,
+                    aut minus nobis temporibus porro sed adipisci laudantium
+                    a! Doloribus mollitia itaque iusto rerum commodi!
+                    <figure>
+                        <img src="./image/m2.jpg" alt="">
+                        <figcaption>
+
+                        </figcaption>
+                    </figure>
+                </p>
+                <p>
+                    <span>operation :</span><br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At cupiditate voluptates obcaecati quos optio suscipit,
+                    aut minus nobis temporibus porro sed adipisci laudantium
+                    a! Doloribus mollitia itaque iusto rerum commodi!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At cupiditate voluptates obcaecati quos optio suscipit,
+                    aut minus nobis temporibus porro sed adipisci laudantium
+                    a! Doloribus mollitia itaque iusto rerum commodi!
+                    <figure>
+                        <img src="./image/m3.jpg" alt="">
+                    </figure>
+                </p>
+                <p>
+                    <span>cas speciale :</span><br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At cupiditate voluptates obcaecati quos optio suscipit,
+                    aut minus nobis temporibus porro sed adipisci laudantium
+                    a! Doloribus mollitia itaque iusto rerum commodi!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At cupiditate voluptates obcaecati quos optio suscipit,
+                    aut minus nobis temporibus porro sed adipisci laudantium
+                    a! Doloribus mollitia itaque iusto rerum commodi!
+                    <figure>
+                        <img src="./image/malade3.jpg" alt="">
+                        <figcaption>
+
+                        </figcaption>
+                    </figure>
+                </p>
+                <p>
+                    <span>internnation :</span><br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At cupiditate voluptates obcaecati quos optio suscipit,
+                    aut minus nobis temporibus porro sed adipisci laudantium
+                    a! Doloribus mollitia itaque iusto rerum commodi!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At cupiditate voluptates obcaecati quos optio suscipit,
+                    aut minus nobis temporibus porro sed adipisci laudantium
+                    a! Doloribus mollitia itaque iusto rerum commodi!
+                    <figure>
+                        <img src="./image/malade1.jpg" alt="">
+                        <figcaption>
+
+                        </figcaption>
+                    </figure>
+                </p>
+                <p>
+                    <span>bien d autres:</span><br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At cupiditate voluptates obcaecati quos optio suscipit,
+                    aut minus nobis temporibus porro sed adipisci laudantium
+                    a! Doloribus mollitia itaque iusto rerum commodi!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At cupiditate voluptates obcaecati quos optio suscipit,
+                    aut minus nobis temporibus porro sed adipisci laudantium
+                    a! Doloribus mollitia itaque iusto rerum commodi!
+                    <figure>
+                        <img src="./image/malade11.jpg" alt="">
+                    </figure>
+                </p>
+            </section>
+        </main>
+        <footer class="piedDepage">
+            <div class="content">
+                <div><span>Liens Utiles</span><br><br><br>
+                    <a href="">accueil</a> <br><br>
+                    <a href="">Hopital</a><br><br>
+                    <a href="">Entreprise</a><br><br>
+                    <a href="">Support</a><br><br>
+                    <a href=""> Media</a><br><br>
+                </div>
+                <div><span>Information</span><br><br><br>
+                    soin des patients <br><br>
+                    Entreprise<br><br>lemjcnvj<br><br>Returns Policy 
+                    <br><br>Privacy Policy<br><br>Apropos<br><br>The Shop<br>
+                </div>
+                <div><span>Address</span><br><br><br>
+                    DOUALA<br><br>
+                    YOUNDE, GAROUA<br><br>
+                    Harlo 61466<br><br>+(21) 255 999 8888<br><br>[email protected]<br>
+                </div>
+                <div><span>consuter aussi</span></div>
+            </div>
+            <div class="motdefin">
+                <div>
+                    © 2023 AACOMA. nous mettons tous a votre service
+                    <a href="">ASCOMA Web Factore</a>
+                </div>
+                <div></div>
+            </div>
+        </footer>
+</body>
+</html>d
